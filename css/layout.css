@@ -1,0 +1,45 @@
+/* 🔹 Container principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-3);
+  display: grid;
+  gap: var(--space-3);
+}
+
+/* 🔹 Seções internas */
+.section {
+  padding: var(--space-2);
+  background-color: var(--color-neutral-300);
+  border-radius: 8px;
+}
+
+/* 🔹 Cabeçalho com Flexbox */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: var(--space-2);
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-2);
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 🔹 Rodapé */
+footer {
+  text-align: center;
+  padding: var(--space-2);
+  background-color: var(--color-neutral-300);
+  color: var(--color-neutral-900);
+}

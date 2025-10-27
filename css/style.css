@@ -1,0 +1,101 @@
+:root {
+  --cor-fundo: #e6f0fa;
+  --cor-texto: #1a3c6e;
+  --cor-link: #0077cc;
+  --cor-destaque: #4caf50;
+  --cor-erro: #ff4d4d;
+  --cor-erro-bg: #ffe6e6;
+  --cor-card: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cor-link);
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main#app {
+  background-color: var(--cor-card);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="email"],
+button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--cor-destaque);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+input.error {
+  border: 2px solid var(--cor-erro);
+  background-color: var(--cor-erro-bg);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main#app {
+    padding: 15px;
+  }
+
+  form {
+    gap: 8px;
+  }
+
+  input[type="email"],
+  button {
+    width: 100%;
+  }
+}

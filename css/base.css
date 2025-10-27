@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: var(--font-md);
+  color: var(--color-neutral-900); /* texto escuro */
+  background-color: var(--color-neutral-100); /* fundo claro */
+  line-height: 1.6;
+  padding: var(--space-2);
+}
+
+h1, h2, h3 {
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+h2 {
+  color: red;
+  font-size: 2rem;
+}
+body {
+  background-color: yellow;
+}

@@ -1,0 +1,55 @@
+/* 📱 Telas pequenas (até 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: var(--space-2);
+  }
+
+  .section {
+    padding: var(--space-2);
+  }
+
+  h1 {
+    font-size: var(--font-lg);
+  }
+
+  h2 {
+    font-size: var(--font-md);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: var(--space-1);
+    background-color: var(--color-primary);
+    padding: var(--space-2);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .formulario input,
+  .formulario select {
+    font-size: var(--font-sm);
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* 🖥️ Telas grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
