@@ -1,17 +1,27 @@
-# ONG Interativa — Entrega III
+# 🌍 ONG Interativa
 
-Projeto desenvolvido para a disciplina de Desenvolvimento Web.
+**ONG Interativa** é uma plataforma web desenvolvida com foco em inclusão social, acessibilidade digital e impacto comunitário. O projeto simula o site institucional de uma organização sem fins lucrativos, com navegação SPA, formulário de contato, modo escuro e boas práticas de desenvolvimento front-end.
 
-## 🎯 Objetivo
-Transformar uma interface estática em uma aplicação web dinâmica com JavaScript avançado.
+---
 
-## 🛠️ Tecnologias
-- HTML5 semântico
-- CSS3 com paleta personalizada e responsividade
-- JavaScript modular (SPA, validação, localStorage)
+## 🎯 Propósito Social
 
-## 🚀 Como testar
-Abra o arquivo `index.html` em um navegador moderno ou acesse via GitHub Pages.
+Este projeto tem como objetivo:
 
-## 🔗 Link do projeto
-[https://seu-usuario.github.io/ong-interativa](https://seu-usuario.github.io/ong-interativa)
+- Promover a conscientização sobre causas sociais através da tecnologia
+- Demonstrar como a acessibilidade pode ser aplicada em interfaces web
+- Servir como modelo acadêmico para estudantes e ONGs que desejam criar presença digital
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5 semântico** — estrutura clara e acessível
+- **CSS3 modular** — com variáveis, layout, responsividade e modo escuro
+- **JavaScript Vanilla** — SPA com roteamento, validação e armazenamento local
+- **Git & GitHub** — versionamento e deploy via GitHub Pages
+
+---
+
+## 📁 Estrutura do Projeto
+

@@ -1,108 +1,127 @@
-:root {
-  --cor-fundo: #e6f0fa;
-  --cor-texto: #1a3c6e;
-  --cor-link: #0077cc;
-  --cor-destaque: #4caf50;
-  --cor-erro: #ff4d4d;
-  --cor-erro-bg: #ffe6e6;
-  --cor-card: #ffffff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* 🌐 Estilo base */
 body {
+  background-color: #ffffff;
+  color: #222222;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* 🧭 Navegação */
 nav ul {
-  display: flex;
-  gap: 20px;
   list-style: none;
-  margin-bottom: 20px;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--cor-link);
+  color: #005fcc;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  text-decoration: underline;
+/* 🔍 Foco visível para navegação por teclado */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
 }
 
-main#app {
-  background-color: var(--cor-card);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* 🧱 Layout semântico */
+header,
+main,
+footer {
+  padding: 1rem 2rem;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* 📦 Seções SPA */
+section {
+  padding: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-input[type="email"],
-button {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+#home {
+  background-color: #f9f9f9;
 }
 
-button {
-  background-color: var(--cor-destaque);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+#sobre {
+  background-color: #eef6ff;
 }
 
-button:hover {
-  background-color: #388e3c;
+#contato {
+  background-color: #ffffff;
 }
 
-input.error {
-  border: 2px solid var(--cor-erro);
-  background-color: var(--cor-erro-bg);
-}
-
-@media (max-width: 768px) {
+/* 🌓 Modo escuro automático */
+@media (prefers-color-scheme: dark) {
   body {
-    padding: 10px;
+    background-color: #121212;
+    color: #f0f0f0;
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
+  nav a {
+    color: #90caf9;
   }
 
-  main#app {
-    padding: 15px;
+  section {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
   }
 
-  form {
-    gap: 8px;
+  #toggle-theme {
+    border-color: #90caf9;
+    color: #90caf9;
   }
 
-  input[type="email"],
-  button {
-    width: 100%;
+  #toggle-theme:hover,
+  #toggle-theme:focus {
+    background-color: #90caf9;
+    color: #121212;
   }
 }
-.imagem-destaque {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+
+/* 🌙 Modo escuro manual */
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
 }
+
+.dark-mode nav a {
+  color: #90caf9;
+}
+
+.dark-mode section {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.dark-mode #toggle-theme {
+  border-color: #90caf9;
+  color: #90caf9;
+}
+
+.dark-mode #toggle-theme:hover,
+.dark-mode #toggle-theme:focus {
+  background-color: #90caf9;
+  color: #000000;
+}
+
+/* 🎨 Botão de alternância de tema */
+#toggle-theme {
+  background: none;
+  border: 2px solid #005fcc;
+  color: #005fcc;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+#toggle-theme

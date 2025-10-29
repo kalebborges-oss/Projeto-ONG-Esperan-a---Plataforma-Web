@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,11 @@
 </head>
 <body>
 
-  <!-- ✅ Navegação SPA com âncoras -->
+  <!-- ✅ Cabeçalho com navegação acessível -->
   <header>
-    <nav>
+    <h1>ONG Interativa</h1>
+    <button id="toggle-theme" aria-label="Alternar tema visual">🌙</button>
+    <nav role="navigation" aria-label="Menu principal">
       <ul>
         <li><a href="#home">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
@@ -21,13 +23,26 @@
     </nav>
   </header>
 
-  <!-- ✅ Container principal onde os templates serão injetados -->
-  <main id="app"></main>
+  <!-- ✅ Conteúdo principal -->
+  <main id="app" role="main" tabindex="0">
+    <!-- Os templates SPA serão injetados aqui -->
+  </main>
+
+  <!-- ✅ Rodapé semântico -->
+  <footer>
+    <p>&copy; 2025 ONG Interativa. Todos os direitos reservados.</p>
+  </footer>
 
   <!-- ✅ Scripts JS em ordem correta -->
   <script src="js/templates.js"></script>
   <script src="js/router.js"></script>
   <script src="js/formValidation.js"></script>
   <script src="js/storage.js"></script>
+  <script>
+    // Alternância de tema acessível
+    document.getElementById('toggle-theme').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
